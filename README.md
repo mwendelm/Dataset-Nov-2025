@@ -49,10 +49,10 @@ Three Dopplium radar units [1], each combining an IWR6843ISK radar board and DCA
 
 The experimental setup is shown in [Figure 1](figure1) and the ussed radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration)
 
-![figure1](placement2.jpeg "Placement")
+![figure1](pictures/placement2.jpeg "Placement")
 *Figure 1: Placement of the three radars in the room.*
 
-![figure2](Dopplium.jpeg "Radar")
+![figure2](pictures/Dopplium.jpeg "Radar")
 *Figure 2: Dopplium radar*
 
 Ground truth respiration data was recorded using a Vernier Go Direct belt [3]; the radar and belt signals were aligned manually.
