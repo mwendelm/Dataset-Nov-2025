@@ -1,15 +1,15 @@
 # Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025
 
 # README
-Datset & code: [10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28)
-GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser)
-GitHub code examples with MATLAB: [Dataset-Nov-2025](https://github.com/mwendelm/Dataset-Nov-2025)
+Datset & code: [10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28) <br /> 
+GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser) <br /> 
+GitHub code examples with MATLAB: [Dataset-Nov-2025](https://github.com/mwendelm/Dataset-Nov-2025) <br /> 
 
-Dataset: Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025
-Responsible Author: Mareike Wendelmuth
-email: <m.wendelmuth@tudelft.nl>
-Created: 15-01-2026
-Modified: -
+Dataset: Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025 <br /> 
+Responsible Author: Mareike Wendelmuth <br /> 
+email: <m.wendelmuth@tudelft.nl> <br /> 
+Created: 15-01-2026 <br /> 
+Modified: - <br /> 
 
 # Table of Contents
 1. [Referencing the dataset](#reference)
@@ -21,8 +21,10 @@ Modified: -
 6. [Activities](#activities)
 7. [File names](#naming)
 8. [Calibration](#calibration)
-9. [Remarks](#remarks)
-10. [References](#references)
+9. [Code examples](#code_examples)
+	1. [load_calibration.mat](#load_calibration)
+10. [Remarks](#remarks)
+11. [References](#references)
 
 ## Referencing the dataset <a name="reference"></a>
 Wendelmuth, M., Yarovoy, A., Fioranelli, F.. 'Dataset of vital sign measurements with three FMCW radars at elevated position - Nov 2025'. (4TU.ResearchData, 2026 [Online]. doi: https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28. Available from: [https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28)
@@ -47,12 +49,15 @@ The data can be loaded with the Dopplium parser from here: [Dopplium/dopplium-pa
 ## Radar setup <a name="setup"></a>
 Three Dopplium radar units [1], each combining an IWR6843ISK radar board and DCA1000EVM evaluation board [2], were mounted at 2.4 m height and tilted toward the center of the room. Two units were placed on the front wall (referred to as ‘left’ and ‘right’) and one on the side wall (‘back’). The radars operated in frequency division multiple access mode at 60, 61.25, and 62.5 GHz with a bandwidth of 1 GHz. 
 
-The experimental setup is shown in [Figure 1](figure1) and the ussed radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration)
+The experimental setup is shown in [Figure 1](figure1) and the ussed radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration).
 
-![figure1](pictures/placement2.jpeg "Placement")
+<img src="pictures/placement2.jpeg" width="400">
+
 *Figure 1: Placement of the three radars in the room.*
 
-![figure2](pictures/Dopplium.jpeg "Radar")
+<img src="pictures/Dopplium.jpeg" width="200">
+
+
 *Figure 2: Dopplium radar*
 
 Ground truth respiration data was recorded using a Vernier Go Direct belt [3]; the radar and belt signals were aligned manually.
@@ -110,9 +115,12 @@ Participant*id*:_activity*nr*_data_*node*.bin
 ## Calibration <a name="calibration"></a>
 For calibration, a corner reflector was put at four different positions within the 5x5 grid. For each measurement it was pointed towards the regarding radar. The calibration files are named accordingly as:
 ```
-Calibration_[*x-coordinate*,*y-coordinate*]_*node*.bin
+Calibration_*x-coordinate*_*y-coordinate*_*node*.bin
 ```
-The distance from the corner reflector to the individual radar nodes was measured with a laser measure device and the values are given below. Additionally, the empty room without the corner reflector was measured. 
+The distance from the corner reflector to the individual radar nodes was measured with a laser measure device and the values are given below. Additionally, the empty room without the corner reflector was measured. This file is referred to as:
+```
+Calibration_emptyRoom_*node*.bin
+```
 
 | Position in the grid | Distance to left Radar \[m] | Distance to right Radar \[m] | Distance to back Radar \[m] |
 | -------------------- | --------------------------- | ---------------------------- | --------------------------- |
@@ -120,6 +128,11 @@ The distance from the corner reflector to the individual radar nodes was measure
 | \[2,4]               | 3.3                         | 4.3                          | 2.2                         |
 | \[4,2]               | 3.5                         | 2                            | 4.5                         |
 | \[4,4]               | 4.4                         | 3.2                          | 4                           |
+
+## Code examples <a name="code_examples"></a>
+The authors included some basic MATLAB code examples within this repository. No guarantee for correctness is given.
+### load_calibration.mat <a name="load_calibration"></a>
+This file contains a simple plot of a Range map and Azimuth-Elevation map of the corner reflector for one radar node.
 
 ## Remarks <a name="remarks"></a>
 Some activities for some participants are recorded multiple times, as the first recording was not sufficient (e.g. one radar did not record). The naming is then increasing with and underscore.
