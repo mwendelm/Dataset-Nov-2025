@@ -1,8 +1,8 @@
 # Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025
 
 # README
-Datset & code: [10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28) <br /> 
-GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser) <br /> 
+Dataset & code: [10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28) <br /> 
+GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser) from [1] <br /> 
 GitHub code examples with MATLAB: [Dataset-Nov-2025](https://data.4tu.nl/v3/datasets/234964d1-fa16-42eb-be36-e80a934ba87f.git) <br /> 
 
 Dataset: Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025 <br /> 
