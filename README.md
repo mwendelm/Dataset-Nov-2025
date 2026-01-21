@@ -2,7 +2,7 @@
 
 # README
 Dataset & code: [10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28) <br /> 
-GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser) from [1] <br /> 
+GitHub code for parsing the data with MATLAB or Python: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser) from [1]<br /> 
 GitHub code examples with MATLAB: [Dataset-Nov-2025](https://data.4tu.nl/v3/datasets/234964d1-fa16-42eb-be36-e80a934ba87f.git) <br /> 
 
 Dataset: Dataset of vital sign measurement with three FMCW radars at elevated position - Nov 2025 <br /> 
@@ -48,9 +48,9 @@ month={Jan} }
 The data can be loaded with the Dopplium parser from here: [Dopplium/dopplium-parser](https://github.com/Dopplium/dopplium-parser)
 
 ## Radar setup <a name="setup"></a>
-Three Dopplium radar units [1], each combining an IWR6843ISK radar board and DCA1000EVM evaluation board [2], were mounted at 2.4 m height and tilted toward the center of the room. Two units were placed on the front wall (referred to as ‘left’ and ‘right’) and one on the side wall (‘back’). The radars operated in frequency division multiple access mode at 60, 61.25, and 62.5 GHz with a bandwidth of 1 GHz. 
+Three Dopplium radar units [1], each combining an IWR6843ISK radar board and DCA1000EVM evaluation board [2], were mounted at 2.4 m height and tilted toward the center of the room. Two units were placed on the front wall (referred to as ‘left’ and ‘right’) and one on the side wall (‘back’) (see [Figure 1]). The radars operated in frequency division multiple access mode at 60, 61.25, and 62.5 GHz with a bandwidth of 1 GHz. 
 
-The experimental setup is shown in [Figure 1](figure1) and the ussed radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration).
+The experimental setup is shown in [Figure 1](figure1) and the used radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration).
 
 <img src="pictures/placement2.jpeg" width="400">
 
@@ -65,7 +65,7 @@ Ground truth respiration data was recorded using a Vernier Go Direct belt [3]; t
 
 Additionally, the participants were recorded with 1-3 cameras as ground truth for their location. Due to privacy, this data is not included in the public dataset. It is possible to ask the authors for information, which might be visible in the camera recording.
 ### Radar parameters <a name="radar_parameters"></a>
-The radar parameters varied a bit between the radars and recording. They are saved in the file and can be extracted using the parser. The general parameter are given in the following:
+Not for all participants the same parameters were used. The parameters for Participant 1 were a bit different than for all other participants. Furthermore, different starting frequencies were used. The exact parameters are saved in the .bin file and can be extracted using the parser. The general parameter are given in the following:
 
 | Parameter           | Value               |
 | ------------------- | ------------------- |
@@ -94,16 +94,16 @@ orators in the area of psychiatry and mental health:
 The participant had to sit on the folded mattress at position \[3,3] for  2 minutes. The facing direction was free of their choice. After 60 seconds of normal breathing a signal occurred and the participant was asked to breath faster for 20 seconds. After that normal breathing for 40 seconds was continued.
 
 ### 2. Sitting arbitrary location
-The participant had to sit on the folded matthress at an arbitrary position within the 5x5 grid, facing in any direction. The participant was asked to sit still and breath normal for 60 seconds.
+The participant had to sit on the folded mattress at an arbitrary position within the 5x5 grid, facing in any direction. The participant was asked to sit still and breath normal for 60 seconds.
 
-### 3.  Laying back 
-The participant had to lay on the back (i.e., in a supine position) on the unfolded mattress at position \[3,3] for  2 minutes. The  direction (horizontal, vertical) was free of their choice. After 60 seconds of normal breathing a signal occurred and the participant was asked to breath faster for 20 seconds. After that normal breathing for 40 seconds was continued.
+### 3.  Lying back 
+The participant had to lie on the back (i.e., in a supine position) on the unfolded mattress at position \[3,3] for  2 minutes. The  direction (horizontal, vertical) was free of their choice. After 60 seconds of normal breathing a signal occurred and the participant was asked to breath faster for 20 seconds. After that normal breathing for 40 seconds was continued.
 
-### 4.  Laying
-The participant had to lay on the unfolded mattress at an arbitrary position (side, back, belly) within the 5x5 grid, facing in any direction. The participant was asked to sit still and breath normal for 60 seconds.
+### 4.  Lying
+The participant had to lie on the unfolded mattress at an arbitrary position (side, back, belly) within the 5x5 grid, facing in any direction. The participant was asked to sit still and breath normal for 60 seconds.
 
 ### 5. Restless 
-The participant had to lay on the unfolded mattress at an arbitrary position (side, back, belly) within the 5x5 grid, facing in any direction. After 15 seconds a signal occured and the participant was asked to change their laying position (e.g., from back to side). During the complete 60 seconds of the recording the participant was asked to breath normally.
+The participant had to lie on the unfolded mattress at an arbitrary position (side, back, belly) within the 5x5 grid, facing in any direction. After 15 seconds a signal occurred and the participant was asked to change their lying position (e.g., from back to side). During the complete 60 seconds of the recording the participant was asked to breath normally.
 
 ### 6. Continuous movements
 A sequence of 5 minutes with free movements in between was recorded. The participant heard a signal every 30 seconds. Then, they had 10 seconds to change the position. This included standing up, moving in the room, sitting, etc. The only restriction was that the participant had to stay within the 5x5 grid and should then be as still as possible for the next 20 seconds of the recording. The sequence started with 30 seconds without movement.
