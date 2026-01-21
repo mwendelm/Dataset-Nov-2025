@@ -1,5 +1,14 @@
+% Author: Mareike Wendelmuth
+% Date: 21-01-2026
+% function to do a (windowed) FFT
+
 %for data cubes of dimension <=5 (i.e. samples, antenna, chirps, frames)
 function result= windowed_fft(data,dimension,fft_size,window_flag)
+% data - data for processing
+% dimension - dimension along which the FFT is applied
+% fft_size - number of DFT points, if larger than data length, the signal
+% is zero-padded
+% window_flog - if 1, Hann window is applied, if 0, no windowing is done
     if dimension==1
         permute_matrix=[1,2,3,4,5];
     elseif dimension==2
