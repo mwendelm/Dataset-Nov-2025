@@ -27,8 +27,9 @@ Modified: - <br />
 10. [Remarks](#remarks)
 11. [References](#references)
 
+
 ## Referencing the dataset <a name="reference"></a>
-Wendelmuth, M., Yarovoy, A., Fioranelli, F.. 'Dataset of vital sign measurements with three FMCW radars at elevated position - Nov 2025'. (4TU.ResearchData, 2026 [Online]. doi: https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28. Available from: [https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28)
+Wendelmuth, M., Yarovoy, A., Fioranelli, F.. 'Dataset of vital sign measurements with three FMCW radars at elevated position - Nov 2025'. [4TU.ResearchData, 2026](https://doi.org/10.4121/169cadca-e5dd-46e7-a9c5-91a4c9b1ff28)
 
 ```
 @misc{Wendelmuth2026_dataset,
