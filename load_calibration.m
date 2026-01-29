@@ -1,4 +1,4 @@
-% Author: Mareikke Wendelmuth
+% Author: Mareike Wendelmuth
 % Date: 15-01-2026
 
 close all 

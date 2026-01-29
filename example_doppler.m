@@ -1,4 +1,4 @@
-% Author: Mareikke Wendelmuth
+% Author: Mareike Wendelmuth
 % Date: 20-01-2026
 % example to plot range map and doppler map
 
