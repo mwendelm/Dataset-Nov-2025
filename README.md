@@ -9,7 +9,7 @@ Dataset: Dataset of vital sign measurement with three FMCW radars at elevated po
 Responsible Author: Mareike Wendelmuth <br /> 
 email: <m.wendelmuth@tudelft.nl> <br /> 
 Created: 15-01-2026 <br /> 
-Modified: - <br /> 
+Modified: 09-02-2026 <br /> 
 
 # Table of Contents
 1. [Referencing the dataset](#reference)
@@ -130,6 +130,8 @@ Calibration_emptyRoom_*node*.bin
 | \[2,4]               | 3.3                         | 4.3                          | 2.2                         |
 | \[4,2]               | 3.5                         | 2                            | 4.5                         |
 | \[4,4]               | 4.4                         | 3.2                          | 4                           |
+
+> Note: During the calibration measurement, the recording person was possibly within in the recording until the space was left. It is therefore recommended to look at the later frames and assure no Doppler motion of a person is detected.
 
 ## Code examples <a name="code_examples"></a>
 The authors included some basic MATLAB code examples within this repository. No guarantee for correctness is given.
