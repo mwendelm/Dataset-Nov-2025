@@ -51,7 +51,7 @@ The data can be loaded with the Dopplium parser from here: [Dopplium/dopplium-pa
 ## Radar setup <a name="setup"></a>
 Three Dopplium radar units [1], each combining an IWR6843ISK radar board and DCA1000EVM evaluation board [2], were mounted at 2.4 m height and tilted toward the center of the room. Two units were placed on the front wall (referred to as ‘left’ and ‘right’) and one on the side wall (‘back’) (see [Figure 1]). The radars operated in frequency division multiple access mode at 60, 61.25, and 62.5 GHz with a bandwidth of 1 GHz. 
 
-The experimental setup is shown in [Figure 1](figure1) and the used radar is shown in [Figure 2](figure2). The flooring included a 5 x 5 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration).
+The experimental setup is shown in [Figure 1](figure1) and the used radar is shown in [Figure 2](figure2). The flooring included a 4 x 4 m grid for definition of participants location. The grid is defined with the 1,1 (y,x) location closest to the left Radar and an increasing x position towards the right radar and an increasing y position to the back Radar. A calibration dataset with the visible corner reflector at different positions was recorded and is explained in [Calibration](#calibration).
 
 <img src="pictures/placement2.jpeg" width="400">
 
