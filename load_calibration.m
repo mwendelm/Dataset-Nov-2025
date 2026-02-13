@@ -91,17 +91,17 @@ title('Position [4,4]')
 
 
 %% azimuth and elevation
-azim_elev_22=fft(rangeProfile_22,8,2);
-azim_elev_22=fft(azim_elev_22,16,3);
+azim_elev_22=fftshift(fft(rangeProfile_22,8,2),2);
+azim_elev_22=fftshift(fft(azim_elev_22,16,3),3);
 
-azim_elev_24=fft(rangeProfile_24,8,2);
-azim_elev_24=fft(azim_elev_24,16,3);
+azim_elev_24=fftshift(fft(rangeProfile_24,8,2),2);
+azim_elev_24=fftshift(fft(azim_elev_24,16,3),3);
 
-azim_elev_42=fft(rangeProfile_42,8,2);
-azim_elev_42=fft(azim_elev_42,16,3);
+azim_elev_42=fftshift(fft(rangeProfile_42,8,2),2);
+azim_elev_42=fftshift(fft(azim_elev_42,16,3),3);
 
-azim_elev_44=fft(rangeProfile_44,8,2);
-azim_elev_44=fft(azim_elev_44,16,3);
+azim_elev_44=fftshift(fft(rangeProfile_44,8,2),2);
+azim_elev_44=fftshift(fft(azim_elev_44,16,3),3);
 
 %% plot azim elev plots
 subplot(2,4,5)
